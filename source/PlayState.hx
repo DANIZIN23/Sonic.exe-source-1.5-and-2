@@ -5062,7 +5062,7 @@ class PlayState extends MusicBeatState
 
 					if (curSong == 'triple-trouble')
 					{
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('soundtestcodes'));
 						video.finishCallback = function()
 						{
@@ -5084,7 +5084,7 @@ class PlayState extends MusicBeatState
 
 					if (SONG.validScore)
 					{
-						NGio.unlockMedal(60961);
+						
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}
 
@@ -5128,7 +5128,7 @@ class PlayState extends MusicBeatState
 					if (curSong.toLowerCase() == 'too-slow' && storyDifficulty == 2)
 					{
 						FlxG.save.data.storyProgress = 1;
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('tooslowcutscene2'));
 						video.finishCallback = function()
 						{
@@ -5143,7 +5143,7 @@ class PlayState extends MusicBeatState
 					{
 						FlxG.save.data.storyProgress = 2;
 						FlxG.save.data.soundTestUnlocked = true;
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('youcantruncutscene2'));
 						video.finishCallback = function()
 						{
@@ -5187,21 +5187,21 @@ class PlayState extends MusicBeatState
 							FlxG.switchState(new FreeplayState());
 						}
 					case 'too-slow':
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('tooslowcutscene2'));
 						video.finishCallback = function()
 						{
 							LoadingState.loadAndSwitchState(new MainMenuState());
 						}
 					case 'you-cant-run':
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('youcantruncutscene2'));
 						video.finishCallback = function()
 						{
 							LoadingState.loadAndSwitchState(new MainMenuState());
 						}
 					case 'triple-trouble':
-						var video:MP4Handler = new MP4Handler();
+						
 						video.playMP4(Paths.video('soundtestcodes'));
 						video.finishCallback = function()
 						{
@@ -5570,18 +5570,18 @@ class PlayState extends MusicBeatState
 		var releaseArray:Array<Bool> = [controls.LEFT_R, controls.DOWN_R, controls.UP_R, controls.RIGHT_R];
 		if (isRing)
 		{
-			holdArray = [controls.LEFT, controls.DOWN, controls.SPACEB, controls.UP, controls.RIGHT];
+			
 			pressArray = [
 				controls.LEFT_P,
 				controls.DOWN_P,
-				controls.SPACE_P,
+				
 				controls.UP_P,
 				controls.RIGHT_P
 			];
 			releaseArray = [
 				controls.LEFT_R,
 				controls.DOWN_R,
-				controls.SPACE_R,
+				
 				controls.UP_R,
 				controls.RIGHT_R
 			];
@@ -5855,7 +5855,7 @@ class PlayState extends MusicBeatState
 
 	public function backgroundVideo(source:String) // for background videos
 	{
-		#if cpp
+		#if desktop
 		useVideo = true;
 
 		FlxG.stage.window.onFocusOut.add(focusOut);
