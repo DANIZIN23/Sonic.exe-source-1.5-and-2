@@ -47,7 +47,7 @@ class SoundTestMenu extends MusicBeatState
 
     override function create()
         {
-			DiscordClient.changePresence('In the Sound Test Menu', null);
+			
 
 			new FlxTimer().start(0.1, function(tmr:FlxTimer)
 				{
@@ -345,7 +345,7 @@ class SoundTestMenu extends MusicBeatState
 			}
 		else if (first == 23 && second == 23) 
 			{
-				var video:MP4Handler = new MP4Handler();
+				
 				woahmanstopspammin = false;
 				flashyWashy(true);
 				new FlxTimer().start(2, function(tmr:FlxTimer)
@@ -362,7 +362,7 @@ class SoundTestMenu extends MusicBeatState
 			}
 		else if (first == 12 && second == 34) 
 			{
-				var video:MP4Handler = new MP4Handler();
+				
 				woahmanstopspammin = false;
 				flashyWashy(true);
 				new FlxTimer().start(2, function(tmr:FlxTimer)
