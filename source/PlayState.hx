@@ -6802,7 +6802,7 @@ class PlayState extends MusicBeatState
 		{
 			switch (curStep)
 			{
-				
+				case 787, 795, 902, 800, 811, 819, 823, 827, 832, 835, 839, 847, 847:
 					doStaticSign(0, false);
 					camX = -35;
 				case 768:
