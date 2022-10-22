@@ -356,7 +356,7 @@ class SoundTestMenu extends MusicBeatState
 				});
 				new FlxTimer().start(2.1, function(tmr:FlxTimer)
 				{
-                	video.playMP4(Paths.video('Keel'));
+                	
 					incameo = true;
 				});
 			}
@@ -373,7 +373,7 @@ class SoundTestMenu extends MusicBeatState
 				});
 				new FlxTimer().start(2.1, function(tmr:FlxTimer)
 				{
-                	video.playMP4(Paths.video('Milky'));
+                	
 					incameo = true;
 				});
 			}
